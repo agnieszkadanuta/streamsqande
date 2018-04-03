@@ -1,4 +1,9 @@
-package pl.dominisz;
+package pl.agnieszkadanuta;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Exercise from
@@ -11,7 +16,7 @@ package pl.dominisz;
 public class ExerciseTwo {
 
     public static void main(String[] args) {
-        List<Album> favs = new ArrayList<>();
+       /* List<Album> favs = new ArrayList<>();
         for (Album a : albums) {
             boolean hasFavorite = false;
             for (Track t : a.tracks) {
@@ -27,6 +32,6 @@ public class ExerciseTwo {
             public int compare(Album a1, Album a2) {
                 return a1.name.compareTo(a2.name);
             }
-        });
+        });*/
     }
 }
