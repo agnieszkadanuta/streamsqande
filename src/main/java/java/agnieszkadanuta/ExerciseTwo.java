@@ -1,4 +1,4 @@
-package pl.agnieszkadanuta;
+package java.agnieszkadanuta;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Exercise from
  * https://docs.oracle.com/javase/tutorial/collections/streams/QandE/questions.html
- *
+ * <p>
  * Convert the following code into a new implementation that uses lambda expressions and aggregate operations
  * instead of nested for loops.
  * Hint: Make a pipeline that invokes the filter, sorted, and collect operations, in that order.
@@ -16,11 +16,16 @@ import java.util.List;
 public class ExerciseTwo {
 
     public static void main(String[] args) {
-       /* List<Album> favs = new ArrayList<>();
+
+        List<Album> albums = new ArrayList<>();
+        List<Album> favs = new ArrayList<>();
+
+        //albums.stream().filter(album -> album.hasFavorite() )
+
         for (Album a : albums) {
             boolean hasFavorite = false;
-            for (Track t : a.tracks) {
-                if (t.rating >= 4) {
+            for (Track t : a.getTracks()) {
+                if (t.getRating() >= 4) {
                     hasFavorite = true;
                     break;
                 }
@@ -30,8 +35,8 @@ public class ExerciseTwo {
         }
         Collections.sort(favs, new Comparator<Album>() {
             public int compare(Album a1, Album a2) {
-                return a1.name.compareTo(a2.name);
+                return a1.getName().compareTo(a2.getName());
             }
-        });*/
+        });
     }
 }
