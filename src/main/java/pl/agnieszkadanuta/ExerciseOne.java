@@ -20,6 +20,12 @@ public class ExerciseOne {
                 System.out.println(p.getName());
             }
         }
+        //JAVA 8
+
+        roster.stream()
+                .filter(person -> person.getGender() == Person.Sex.MALE)
+                .forEach(person -> System.out.println(person.getName()));
+        
     }
 
     private static List<Person> createRoster(){
