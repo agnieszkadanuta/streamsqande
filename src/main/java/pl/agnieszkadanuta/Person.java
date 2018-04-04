@@ -1,4 +1,4 @@
-package java.agnieszkadanuta;
+package pl.agnieszkadanuta;
 
 public class Person {
 
